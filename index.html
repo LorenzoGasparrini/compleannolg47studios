@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Invito — 18° Compleanno di Lorenzo 🎉</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorenzo's 18° Party 🎉</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Sfondo animato -->
+  <canvas id="particles"></canvas>
 
-<div class="banner">🎂 18° Compleanno di Lorenzo — 10 Novembre 2025 🎂</div>
-
-<main class="container">
-
-  <header class="hero fade-in">
-    <h1>Sei ufficialmente invitato</h1>
-    <h2>al mio <span class="accent">18° compleanno</span> 🎉</h2>
+  <header class="hero">
+    <h1 class="hero-title">
+      🎉 Sei ufficialmente invitato al mio <span class="highlight">18° compleanno!</span> 🎉
+    </h1>
+    <p class="subtitle fade-in">Una serata da ricordare ✨</p>
   </header>
 
-  <section class="card info fade-in">
-    <h3>Dove</h3>
-    <p><strong>Live Club a Potenza</strong></p>
-    <a href="https://www.google.com/maps/place/Life+Club/@40.6233237,15.7852696,17z/data=!3m1!4b1!4m6!3m5!1s0x1338e2a2ce611c89:0x39a6deef0abd0ad8!8m2!3d40.6233197!4d15.7878445!16s%2Fg%2F11gc16v9hx?entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn">
-      👉 Visualizza su Maps
-    </a>
+  <main>
+    <section class="card fade-up">
+      <h2>📍 Dove</h2>
+      <p><strong>Life Club, Potenza</strong></p>
+      <a href="https://www.google.com/maps/place/Life+Club/@40.6233237,15.7852696,17z/data=!3m1!4b1!4m6!3m5!1s0x1338e2a2ce611c89:0x39a6deef0abd0ad8!8m2!3d40.6233197!4d15.7878445!16s%2Fg%2F11gc16v9hx?entry=ttu&g_ep=EgoyMDI1MTAyOS4xIKXMDSoASAFQAw%3D%3D"
+         target="_blank" class="map-btn">
+        Visualizza su Maps 📍
+      </a>
+    </section>
 
-    <h3>Quando</h3>
-    <p class="important-time">Devi essere lì <strong>entro le 20:00</strong> ⏰</p>
+    <section class="card fade-up delay-1">
+      <h2>🕗 Quando</h2>
+      <p class="time">Tu devi essere lì <strong>ENTRO le 20:00</strong> 😉</p>
+    </section>
 
-    <div class="warning fade-in">
-      ⚠️ <strong>Vietato:</strong> non divertirsi.
-    </div>
-  </section>
+    <section class="card fade-up delay-2">
+      <h2>⚠️ Regola principale</h2>
+      <p class="warning">🚫 Vietato non divertirsi!</p>
+    </section>
 
-  <section class="card rsvp fade-in">
-    <h3>Conferma la tua presenza</h3>
-    <p>Clicca il pulsante qui sotto per inviarmi un messaggio su WhatsApp:</p>
-    <a 
-      href="https://wa.me/393791505885?text=Ciao%20Lorenzo%2C%20confermo%20la%20mia%20presenza%20al%20tuo%2018%C2%B0%20compleanno%21" 
-      target="_blank" 
-      class="whatsapp-btn">
-      Conferma via WhatsApp ✅
-    </a>
-    <a
-    href="https://wa.me/393791505885?text=Ciao%20Lorenzo%2C%20purtroppo%20non%20posso%20partecipare%20al%20tuo%2018%C2%B0%20compleanno." 
-    target="_blank" 
-    class="whatsapp-btn decline">
-    Non ci sarò ❌
-  </a>
-  </section>
+    <section class="card fade-up delay-3">
+      <h2>✅ Conferma la tua presenza</h2>
+      <a 
+        href="https://wa.me/393791505885?text=Ehy!%20Poich%C3%A8%20sono%20una%20persona%20molto%20cool%20potr%C3%B2%20esserci%20al%20tuo%20compleanno!%20" 
+        target="_blank" 
+        class="whatsapp-btn confirm">
+        Confermo via WhatsApp ✅
+      </a>
 
-  <footer class="muted small center">Creato da Lorenzo 🎂 — Invito semplice e mobile-friendly</footer>
+      <a 
+        href="https://wa.me/393791505885?text=Ehy!%20Purtroppo%20non%20posso%20esserci%20alla%20festa%2C%20ma%20appena%20ti%20vedo%20ti%20fornisco%2010%20mila%20euro...%20" 
+        target="_blank" 
+        class="whatsapp-btn decline">
+        Non ci sarò ❌
+      </a>
+    </section>
+  </main>
 
-</main>
+  <footer class="fade-in">
+    <p>Creato con 💛 e 🎧 da <strong>Lorenzo</strong></p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
