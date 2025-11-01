@@ -1,7 +1,7 @@
-// ✨ Particelle sullo sfondo
+// ✨ Effetto particelle sullo sfondo
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
-canvas.style.pointerEvents = "none"; // non blocca lo scroll
+canvas.style.pointerEvents = "none";
 
 let particles = [];
 
@@ -17,8 +17,8 @@ for (let i = 0; i < 60; i++) {
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
     r: Math.random() * 2 + 1,
-    dx: (Math.random() - 0.5) * 0.5,
-    dy: (Math.random() - 0.5) * 0.5,
+    dx: (Math.random() - 0.5) * 0.3,
+    dy: (Math.random() - 0.5) * 0.3,
   });
 }
 

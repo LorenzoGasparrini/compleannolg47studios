@@ -4,59 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lorenzo's 18° Party 🎉</title>
+
+  <!-- CSS principale -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- 🔒 Content Security Policy per sicurezza -->
+  <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self' https://*.google.com https://*.whatsapp.com;
+      style-src 'self' 'unsafe-inline';
+      img-src 'self' data: https://*;
+      connect-src 'self';
+      frame-src https://*.google.com https://*.whatsapp.com;
+  ">
+
+  <!-- 🛡️ HTTPS e sicurezza -->
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#7dd3fc">
+
+  <!-- 🖋️ Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Sfondo animato -->
   <canvas id="particles"></canvas>
 
-  <header class="hero">
+  <header class="hero fade-in">
     <h1 class="hero-title">
       🎉 Sei ufficialmente invitato al mio <span class="highlight">18° compleanno!</span> 🎉
     </h1>
-    <p class="subtitle fade-in">Una serata da ricordare ✨</p>
+    <p class="subtitle">Una serata da ricordare ✨</p>
   </header>
 
   <main>
-    <section class="card fade-up">
+    <section class="card">
       <h2>📍 Dove</h2>
       <p><strong>Life Club, Potenza</strong></p>
-      <a href="https://www.google.com/maps/place/Life+Club/@40.6233237,15.7852696,17z/data=!3m1!4b1!4m6!3m5!1s0x1338e2a2ce611c89:0x39a6deef0abd0ad8!8m2!3d40.6233197!4d15.7878445!16s%2Fg%2F11gc16v9hx?entry=ttu&g_ep=EgoyMDI1MTAyOS4xIKXMDSoASAFQAw%3D%3D"
-         target="_blank" class="map-btn">
-        Visualizza su Maps 📍
-      </a>
+      <a href="https://www.google.com/maps/place/Life+Club/@40.6233237,15.7852696,17z/data=!3m1!4b1!4m6!3m5!1s0x1338e2a2ce611c89:0x39a6deef0abd0ad8!8m2!3d40.6233197!4d15.7878445!16s%2Fg%2F11gc16v9hx?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D"
+         target="_blank" rel="noopener noreferrer" class="map-btn">📍 Visualizza su Maps</a>
     </section>
 
-    <section class="card fade-up delay-1">
+    <section class="card">
       <h2>🕗 Quando</h2>
       <p class="time">Tu devi essere lì <strong>ENTRO le 20:00</strong> 😉</p>
     </section>
 
-    <section class="card fade-up delay-2">
+    <section class="card">
       <h2>⚠️ Regola principale</h2>
       <p class="warning">🚫 Vietato non divertirsi!</p>
     </section>
 
-    <section class="card fade-up delay-3">
+    <section class="card">
       <h2>✅ Conferma la tua presenza</h2>
-      <a 
-        href="https://wa.me/393791505885?text=Ehy!%20Poich%C3%A8%20sono%20una%20persona%20molto%20cool%20potr%C3%B2%20esserci%20al%20tuo%20compleanno!%20" 
-        target="_blank" 
-        class="whatsapp-btn confirm">
-        Confermo via WhatsApp ✅
-      </a>
+      <a href="https://wa.me/393791505885?text=Ehy!%20Poich%C3%A8%20sono%20una%20persona%20molto%20cool%20potr%C3%B2%20esserci%20al%20tuo%20compleanno!%20"
+         target="_blank" rel="noopener noreferrer" class="whatsapp-btn confirm">Confermo via WhatsApp ✅</a>
 
-      <a 
-        href="https://wa.me/393791505885?text=Ehy!%20Purtroppo%20non%20posso%20esserci%20alla%20festa%2C%20ma%20appena%20ti%20vedo%20ti%20fornisco%2010%20mila%20euro...%20" 
-        target="_blank" 
-        class="whatsapp-btn decline">
-        Non ci sarò ❌
-      </a>
+      <a href="https://wa.me/393791505885?text=Ehy!%20Purtroppo%20non%20posso%20esserci%20alla%20festa%2C%20ma%20appena%20ti%20vedo%20ti%20fornisco%2010%20mila%20euro...%20"
+         target="_blank" rel="noopener noreferrer" class="whatsapp-btn decline">Non ci sarò ❌</a>
     </section>
   </main>
 
-  <footer class="fade-in">
-    <p>Creato con 💛 e 🎧 da <strong>Lorenzo</strong></p>
+  <footer>
+    <p><strong>FREDDIE MERCURY NON POTRA' ESSERCI...</strong></p>
   </footer>
 
   <script src="script.js"></script>
